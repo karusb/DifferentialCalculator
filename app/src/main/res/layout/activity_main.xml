@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bazsoft.differentialcalc.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Int"
+                android:id="@+id/Integralchoosebut"
+                android:layout_gravity="right"
+                android:layout_weight="1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dx/dy"
+                android:id="@+id/derivativechoosebut"
+                android:layout_gravity="right"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/expressionview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expressionview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="5" >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="X"
+                android:id="@+id/variablebut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="SIN"
+                android:id="@+id/sinbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="COS"
+                android:id="@+id/cosbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="+"
+                android:id="@+id/plusbut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expressionview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="5" >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="X^"
+                android:id="@+id/powerbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="tan"
+                android:id="@+id/tanbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="ln"
+                android:id="@+id/lnbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="-"
+                android:id="@+id/minusbut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expressionview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="5" >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="7"
+                android:id="@+id/sevenbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="8"
+                android:id="@+id/eightbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="9"
+                android:id="@+id/ninebut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="*"
+                android:id="@+id/productbut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expressionview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="5" >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="4"
+                android:id="@+id/fourbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="5"
+                android:id="@+id/fivebut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="6"
+                android:id="@+id/sixbut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="/"
+                android:id="@+id/dividebut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expressionview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="5">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="1"
+                android:id="@+id/onebut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="2"
+                android:id="@+id/twobut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="3"
+                android:id="@+id/threebut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="="
+                android:id="@+id/equalbut" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expressionview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="5" >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="."
+                android:id="@+id/decimalsep" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="0"
+                android:id="@+id/zerobut" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:id="@+id/clear" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="eval"
+                android:id="@+id/evalbut" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
